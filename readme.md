@@ -109,7 +109,7 @@
 
 ## 为什么选择Python？
 * 不会C++
-* 想用Dart的Flutter但是Dart库少，而是Dart不如Python好写
+* 想用Dart的Flutter但是Dart库少，而且Dart不如Python好写
 
 #### 希望后来者能做出更多优秀的开源项目
 

@@ -1,0 +1,59 @@
+{
+  "Version" : 1.1,
+  "Description" : "动态拓展ToolBox插件系统的功能，如需手动拓展功能，请仔细阅读帮助手册",
+
+  "Help" : {
+      "version" : "1.1",
+      "info" : "作者信息",
+      "des" : "插件的描述",
+      "icon" : "../Plugins/default/icons/help.ico",
+      "shortcuts" : "Win+Shift+S",
+      "link" : "..."
+    },
+
+  "Packages" : {
+    "Shift" : {
+      "version" : "1.1",
+      "info" : "Microsoft",
+      "des" : "调用Windows截图，请保证系统至少在Win10及以上",
+      "icon" : "../Plugins/default/icons/shift.ico",
+      "shortcuts" : "Win+Shift+H",
+      "link" : "../Plugins/default/links/shift.py"
+    },
+
+    "Calc" : {
+      "version" : "1.1",
+      "info" : "Microsoft",
+      "des" : "调用Windows自动的计算机功能",
+      "icon" : "../Plugins/default/icons/calc.ico",
+      "shortcuts" : "Win+Shift+C",
+      "link" : "../Plugins/default/links/calc.py"
+    },
+
+    "MDEditor" : {
+      "version" : "1.1",
+      "info" : "PythonnotJava",
+      "des" : "基于QTextEdit开发的简易版本Markdown编辑器",
+      "icon" : "../Plugins/default/icons/note.ico",
+      "shortcuts" : "Win+Shift+H",
+      "link" : "../Plugins/default/links/mdeditor.py"
+    },
+
+    "NotePad" : {
+      "version" : "1.1",
+      "info" : "PythonnotJava",
+      "des" : "基于QTextEdit开发的便携式记事本，相较于传统输出，该笔记本为您的工作流提供了更方便的方式",
+      "icon" : "../Plugins/default/icons/note.ico",
+      "shortcuts" : "Win+Shift+N"
+    },
+
+    "CML" : {
+      "version" : "1.1",
+      "info" : "PythonnotJava",
+      "des" : "cml是Cleave内置的Markup-Language，它是一种轻量级的语言，我设计它的目的在于希望使用者更灵活的自定义一些简单实用的工具",
+      "icon" : "../Plugins/default/icons/trick.ico",
+      "shortcuts" : "Win+Shift+A"
+    }
+
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Datas" : {
+    "Type1" : [2, 6, 3, 0.8],
+    "Type2" : [6, 0, 2, 0.01],
+    "Type2_string" : ["A", "null", "B", "1.02.5", "名字"],
+    "UnNamed1" : [3, 2, 6, 9, 4, 5],
+    "UnNamed1_string" : ["QQ", "null", "2.0.0", "II"]
+  },
+  "StringDataPosition" : {
+    "A" :  [["Type2", 7]],
+    "QQ" : [["UnNamed1", 2]],
+    "名字" : [["标签坐标", "行坐标"]],
+    "null" : [["UnNamed1", 65], ["Type2", 5]]
+  },
+  "DataCounts" : 110,
+  "StringDataCounts" : 12,
+  "NullDataCounts" : 5,
+  "NumberCounts" : 93
+}

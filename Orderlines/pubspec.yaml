@@ -1,0 +1,6 @@
+name: Cleave_CommandLine
+dependencies:
+  args:
+
+environment:
+  sdk: '^3.2.0'

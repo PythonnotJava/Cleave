@@ -1,0 +1,310 @@
+#AppCore {
+   background-color:  #3c3c5c;
+}
+
+QToolTip {
+    font-size : 18px;
+    color : red;
+    background-color : #3c3c5c;
+    font-weight : bold;
+    border-radius : 5px;
+    border : 5px solid amber;
+}
+
+#MidSplitter{
+    background-color: transparent;
+}
+
+#MidSplitter::handle:horizontal {
+    background-color : darkblue;
+    width : 5px;
+    border-radius : 10px;
+}
+
+#SideBar {
+    background-color : #0c1921;
+    border-radius : 40px;
+}
+
+OptToolButton {
+    border-radius : 15px;
+    background-color : tear;
+    font-size : 24px;
+    font-weight: 900;
+    font-family : "微软雅黑";
+    color : gold;
+}
+
+OptToolButton:hover
+{
+    background-color: #3c3c5c;
+}
+
+OptToolButton:pressed{
+    background-color: #3c3c5c;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+OptToolButton:disabled {
+    background-color: #015059;
+}
+
+#AlphaSlider::groove:horizontal {
+    border: 2px solid #565a5e;
+    height: 8px;
+    background: #565a5e;
+    margin: 0px;
+    border-radius: 4px;
+}
+
+#AlphaSlider::handle:horizontal {
+    background: #232629;
+    border: 2px solid #565a5e;
+    width: 16px;
+    height: 16px;
+    margin: -8px 0;
+    border-radius: 9px;
+}
+
+#AlphaSlider::groove:vertical {
+    border: 2px solid #565a5e;
+    width: 8px;
+    background: #565a5e;
+    margin: 0px;
+    border-radius: 4px;
+}
+
+#AlphaSlider::handle:vertical {
+    background: #232629;
+    border: 2px solid #565a5e;
+    width: 16px;
+    height: 16px;
+    margin: 0 -8px;
+    border-radius: 9px;
+}
+
+QScrollBar {
+    background : #565a5e;
+}
+
+QScrollBar:vertical{
+    max-width: 15px;
+}
+
+QScrollBar:horizontal{
+    max-height: 15px;
+}
+
+QScrollBar::handle:vertical,
+QScrollBar::handle:horizontal{
+    background: #232629;
+    border-radius: 5px;
+    min-height : 50px;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical,
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal{
+    height: 0;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical,
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal{
+    background: skyblue;
+}
+
+#ThemeLabel, #DraculaLabel, #SkyblueLabel, #CyanLabel, #SnowLabel, #FontLabel, #AlphaLabel {
+    font-family : "微软雅黑", "serif";
+    font-size : 24px;
+    color : red;
+    background-color : rgb(59, 50, 50);
+    padding-left : 15px;
+    border-radius : 10px;
+    border-right :3px solid red;
+    border-bottom : 3px solid red;
+    min-height:60px;
+    max-height:60px;
+    min-width : 120px;
+    max-width : 120px;
+}
+
+#DraculaToggle, #CyanToggle, #SkyblueToggle, #SnowToggle{
+    width : 1px;
+}
+
+QComboBox {
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgb(100, 100, 100);
+    background: rgb(72, 72, 73);
+}
+
+QComboBox:enabled {
+    color: rgb(175, 175, 175);
+}
+
+QComboBox:!enabled {
+    color: rgb(155, 155, 155);
+}
+
+QComboBox:enabled:hover, QComboBox:enabled:focus {
+    color: rgb(230, 230, 230);
+    background: rgb(68, 69, 73);
+}
+
+QComboBox::drop-down {
+    width: 200px;
+    border: none;
+    background: transparent;
+}
+
+QComboBox::drop-down:hover {
+    background: rgba(255, 255, 255, 30);
+}
+
+QComboBox::down-arrow:on {
+    /**top: 1px;**/
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid rgb(100, 100, 100);
+    background: rgb(68, 69, 73);
+    outline: none;
+}
+
+QComboBox QAbstractItemView::item {
+    height: 25px;
+    color: rgb(175, 175, 175);
+}
+
+QComboBox QAbstractItemView::item:selected {
+    background: rgba(255, 255, 255, 40);
+    color: rgb(230, 230, 230);
+}
+
+#F-SearchCellBtn,
+#OperatorBar-OpenBtn,
+#OperatorBar-JustSaveBtn,
+#OperatorBar-SaveAsBtn,
+#OperatorBar-HelpBtn,
+#OperatorBar-AlignLeftBtn,
+#OperatorBar-AlignCenterBtn,
+#OperatorBar-AlignRightBtn,
+#OperatorBar-ThawBtn,
+#OperatorBar-FormatBoxBtn{
+    background-color : #3c3c5c;
+    border-radius : 5px;
+    border : 2px solid #40668c;
+    color : red;
+}
+
+#F-SearchCellBtn:hover,
+#OperatorBar-OpenBtn:hover,
+#OperatorBar-JustSaveBtn:hover,
+#OperatorBar-SaveAsBtn:hover,
+#OperatorBar-HelpBtn:hover,
+#OperatorBar-AlignLeftBtn:hover,
+#OperatorBar-AlignCenterBtn:hover,
+#OperatorBar-AlignRightBtn:hover,
+#OperatorBar-ThawBtn:hover,
+#OperatorBar-FormatBoxBtn:hover{
+    color : gold;
+    font-weight:900;
+    background-color : grey;
+    border : 2px solid blue;
+}
+
+#F-SearchCellBtn:pressed,
+#OperatorBar-OpenBtn:pressed,
+#OperatorBar-JustSaveBtn:pressed,
+#OperatorBar-SaveAsBtn:pressed,
+#OperatorBar-HelpBtn:pressed,
+#OperatorBar-AlignLeftBtn:pressed,
+#OperatorBar-AlignCenterBtn:pressed,
+#OperatorBar-AlignRightBtn:pressed,
+#OperatorBar-ThawBtn:pressed,
+#OperatorBar-FormatBoxBtn:pressed{
+    background-color: blue;
+    padding-left: 3px;
+    padding-top: 3px;
+    border : 2px solid lightskyblue;
+}
+
+#OperatorBar-OpenLabel,
+#OperatorBar-OpenEdit,
+#F-SearchCellEdit{
+    border-radius : 5px;
+    font-size : 16px;
+    font-weight : 900;
+    color: gold;
+    background-color : darkblue;
+    qproperty-alignment: AlignCenter;
+    border-left : 3px solid red;
+    border-top : 2px solid red;
+}
+
+#TabView-ToolBar::tab {
+    border: none;
+    border-bottom-color: #FFFFFF;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width: 20ex;
+    padding: 2px;
+    font-size: 14px;
+    background-color: #3c3c5c;
+    color : gold;
+    font-weight : 900;
+}
+
+#TabView-ToolBar::tab:selected,
+#TabView-ToolBar::tab:hover {
+    background-color: #2c5b56;
+}
+
+#TabView-ToolBar::tab:selected {
+    color: gold;
+    border-bottom: 5px solid red;
+    font-weight:bold;
+    background-color: #c1d1cf;
+}
+
+#ApiToolBox{
+    background : white;
+    font: 18pt "Arial";
+}
+
+#ApiToolBox::tab {
+    font: 18pt "Arial";
+    border : 2px solid #782A8F;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#ApiToolBox::tab:selected {
+    padding-left : 50px;
+    font: 18pt "Arial" italic;
+    color: gold;
+    background: #782A8F;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#QE-DropCoreWidgetAT, #QE-DropCoreWidgetAS{
+    background:#3c3c5c;
+}
+
+#OperatorBar-DivideLine {
+    color : red;
+}
+
+#PluginAreas{
+    background-color : #3c3c5c;
+}

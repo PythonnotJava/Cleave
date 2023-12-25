@@ -1,0 +1,299 @@
+#AppCore {
+    background: qradialgradient(cx:0, cy:0, radius: 1, fx:0.5, fy:0.5, stop:0	 green, stop:1 #00FA9A);
+}
+
+QToolTip {
+    font-size : 18px;
+    color : #8B0000;
+    background-color : #00FF00;
+    font-weight : bold;
+    border-radius : 5px;
+    border : 5px solid #006400;
+    min-height : 6px;
+    min-width : 10px;
+}
+
+#MidSplitter{
+    background-color: transparent;
+}
+
+#MidSplitter::handle:horizontal {
+    background-color : #556B2F;
+    width : 5px;
+    border-radius : 10px;
+}
+
+#SideBar {
+    background-color : lightgreen;
+    border-radius : 40px;
+}
+
+OptToolButton {
+    border-radius : 15px;
+    background-color : #FFA500;
+    font-size : 24px;
+    font-weight: 900;
+    font-family : "微软雅黑";
+    color : gold;
+}
+
+OptToolButton:hover
+{
+    background-color: lightGrey;
+}
+
+OptToolButton:pressed{
+    background-color: papayaWhip;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+OptToolButton:disabled {
+    background-color: papayaWhip;
+}
+
+#AlphaSlider::groove:horizontal {
+    border: 2px solid #D2B48C;
+    height: 8px;
+    background: #A0522D;
+    margin: 0px;
+    border-radius: 4px;
+}
+
+#AlphaSlider::handle:horizontal {
+    background: #A0522D;
+    border: 2px solid #D2B48C;
+    width: 16px;
+    height: 16px;
+    margin: -8px 0;
+    border-radius: 9px;
+}
+
+#AlphaSlider::groove:vertical {
+    background: #A0522D;
+    border: 2px solid #D2B48C;
+    width: 8px;
+    margin: 0px;
+    border-radius: 4px;
+}
+
+#AlphaSlider::handle:vertical {
+    background: #A0522D;
+    border: 2px solid #D2B48C;
+    width: 16px;
+    height: 16px;
+    margin: 0 -8px;
+    border-radius: 9px;
+}
+
+QScrollBar {
+    background : #8FBC8F;
+}
+
+QScrollBar:vertical{
+    max-width: 15px;
+}
+
+QScrollBar:horizontal{
+    max-height: 15px;
+}
+
+QScrollBar::handle:vertical,
+QScrollBar::handle:horizontal{
+    background: #8FBC8F;
+    border-radius: 5px;
+    min-height : 50px;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical,
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal{
+    height: 0;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical,
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal{
+    background: #F0FFF0;
+}
+
+#ThemeLabel, #DraculaLabel, #SkyblueLabel, #CyanLabel, #SnowLabel, #FontLabel, #AlphaLabel {
+    font-family : "微软雅黑", "serif";
+    font-size : 24px;
+    color : red;
+    background-color :	#FAF0E6;
+    padding-left : 15px;
+    border-radius : 10px;
+    border :3px solid #F08080;
+    min-height:60px;
+    max-height:60px;
+    min-width : 120px;
+    max-width : 120px;
+}
+
+#DraculaToggle, #CyanToggle, #SkyblueToggle, #SnowToggle{
+    width : 1px;
+}
+
+QComboBox {
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid green;
+    background: #00FF7F;
+}
+
+QComboBox:enabled {
+    color: darkblue;
+    font-weight:bold;
+}
+
+QComboBox:!enabled {
+    color: rgb(155, 155, 155);
+}
+
+QComboBox:enabled:hover, QComboBox:enabled:focus {
+    color: 	#00FA9A;
+    background: #98FB98;
+}
+
+QComboBox::drop-down {
+    width: 200px;
+    border: none;
+    background: transparent;
+}
+
+QComboBox::drop-down:hover {
+    background: #98FB98;
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid #8FBC8F;
+    background: #98FB98;
+    outline: none;
+}
+
+QComboBox QAbstractItemView::item {
+    height: 25px;
+    color:#00FF00;
+}
+
+QComboBox QAbstractItemView::item:selected {
+    background: #98FB98;
+    color: #00FF00;
+}
+
+#F-SearchCellBtn,
+#OperatorBar-OpenBtn,
+#OperatorBar-JustSaveBtn,
+#OperatorBar-SaveAsBtn,
+#OperatorBar-HelpBtn,
+#OperatorBar-AlignLeftBtn,
+#OperatorBar-AlignCenterBtn,
+#OperatorBar-AlignRightBtn,
+#OperatorBar-ThawBtn,
+#OperatorBar-FormatBoxBtn{
+    background-color : #00FA9A;
+    border-radius : 5px;
+    border : 2px solid white;
+}
+
+#F-SearchCellBtn:hover,
+#OperatorBar-OpenBtn:hover,
+#OperatorBar-JustSaveBtn:hover,
+#OperatorBar-SaveAsBtn:hover,
+#OperatorBar-HelpBtn:hover,
+#OperatorBar-AlignLeftBtn:hover,
+#OperatorBar-AlignCenterBtn:hover,
+#OperatorBar-AlignRightBtn:hover,
+#OperatorBar-ThawBtn:hover,
+#OperatorBar-FormatBoxBtn:hover{
+    font-weight: 900;
+    background-color : silver;
+    border : 2px solid lightskyblue;
+}
+
+#F-SearchCellBtn:pressed,
+#OperatorBar-OpenBtn:pressed,
+#OperatorBar-JustSaveBtn:pressed,
+#OperatorBar-SaveAsBtn:pressed,
+#OperatorBar-HelpBtn:pressed,
+#OperatorBar-AlignLeftBtn:pressed,
+#OperatorBar-AlignCenterBtn:pressed,
+#OperatorBar-AlignRightBtn:pressed,
+#OperatorBar-ThawBtn:pressed,
+#OperatorBar-FormatBoxBtn:pressed{
+    background-color: papayaWhip;
+    padding-left: 3px;
+    padding-top: 3px;
+    border : 2px solid lightskyblue;
+}
+
+#OperatorBar-OpenLabel,
+#OperatorBar-OpenEdit,
+#F-SearchCellEdit{
+    border-radius : 5px;
+    font-size : 16px;
+    font-weight : 900;
+    color:	#53868B;
+    border : 2px solid lightskyblue;
+    background-color : lightskyblue;
+    qproperty-alignment: AlignCenter;
+}
+
+#TabView-ToolBar::tab {
+    border: none;
+    border-bottom-color: #FFFFFF;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width: 20ex;
+    padding: 2px;
+    font-size: 14px;
+    background-color: #00FA9A;
+}
+
+#TabView-ToolBar::tab:selected,
+#TabView-ToolBar::tab:hover {
+    background-color: #fae9c8f1;
+}
+
+#TabView-ToolBar::tab:selected {
+    color: #e99d0ecf;
+    border-bottom: 10px solid #111b0af5;
+    font-weight:bold;
+    background-color: #fae9c8f1;
+}
+
+#ApiToolBox{
+    background : white;
+    font: 18pt "Arial";
+}
+
+#ApiToolBox::tab {
+    font: 18pt "Arial";
+    border : 2px solid #33194F;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#ApiToolBox::tab:selected {
+    padding-left : 50px;
+    font: 18pt "Arial" italic;
+    color: #79C1FC;
+    background: #35E68E;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#OperatorBar-DivideLine {
+    color : grey;
+}
+
+#PluginAreas{
+    background-color : lightgreen;
+}

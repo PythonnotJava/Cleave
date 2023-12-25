@@ -1,0 +1,119 @@
+@ 每个控件构造
+***
+类型 {
+    参数声明
+}
+***
+@ AbstractWidget是所有控件的基类，几乎所有控件都继承于AbstractWidget
+@ 除了AbstractWidget的构造是使用factoryConstructor方式，而其他的控件都是setWidgets（或者必须实现setWidgets方法实现构造），都使用kwargs关键字传入基类方法
+@ 控件的构造函数必须返回自身（为了实现连级运算符，从而可以调用代码块）
+
+AbstractWidget {
+    parent=None, 
+    rect: Optional[list] = None,
+    flags: Optional[Any] = None,
+    x: Optional[int] = None,
+    y: Optional[int] = None,
+    w: Optional[int] = None,
+    h: Optional[int] = None,
+    minw: Optional[int] = None,
+    minh: Optional[int] = None,
+    maxw: Optional[int] = None,
+    maxh: Optional[int] = None,
+    fixSize: Optional[Iterable] = None,
+    resize: Optional[Iterable] = None,
+    objectName: Optional[str] = None,
+    qss: Optional[str] = None,
+    shadow: Optional[ShadowEffects] = None,
+    cursor: Optional[str] = None,
+    font: Union[QFont, OptFont] = None,
+    tips: Optional[str] = None,
+    contentsMargins: tuple | QMargins = None,
+    mainlay: Optional[QLayout] = None,
+    propertyName: Optional[str] = None,
+    propertyValue: Any = None,
+    sizePolicy: QSizePolicy | list[QSizePolicy.Policy] | None = None,
+    focusPolicy: Optional[Qt.FocusPolicy] = None,
+    palette : Optional[QPalette] = None
+}
+
+***  
+    parent：父类控件，如果控件处于最基础级别，就不必声明控件，如果一个控件处于高级别层次且无法阻塞展示（exec方法），在没有声明parent或者不放入布局中的前提下，就无法展示
+    rect: Optional[list] = None,
+    flags: Optional[Any] = None,
+    x: Optional[int] = None,
+    y: Optional[int] = None,
+    w: Optional[int] = None,
+    h: Optional[int] = None,
+    minw: Optional[int] = None,
+    minh: Optional[int] = None,
+    maxw: Optional[int] = None,
+    maxh: Optional[int] = None,
+    fixSize: Optional[Iterable] = None,
+    resize: Optional[Iterable] = None,
+    objectName: Optional[str] = None,
+    qss: Optional[str] = None,
+    shadow: Optional[ShadowEffects] = None,
+    cursor: Optional[str] = None,
+    font: Union[QFont, OptFont] = None,
+    tips: Optional[str] = None,
+    contentsMargins: tuple | QMargins = None,
+    mainlay: Optional[QLayout] = None,
+    propertyName: Optional[str] = None,
+    propertyValue: Any = None,
+    sizePolicy: QSizePolicy | list[QSizePolicy.Policy] | None = None,
+    focusPolicy: Optional[Qt.FocusPolicy] = None,
+    palette : Optional[QPalette] = None
+***
+
+@ OptLabel是标签类，用于展示文本或者图片
+OptLabel {
+    text: Optional[str] = None,
+    text_model: bool = True,
+    img: Optional[str] = None,
+    img_model: bool = False,
+    wrap: bool = True,
+    linkable: bool = True,
+    align: Optional[Qt.Alignment] = None,
+    **kwargs
+}
+
+***
+    text: 标签的文本
+    text_model: 文本模式
+    img: 图片路径
+    img_model: 图片模式
+    wrap: 文本模式下支持宽度不够自动换行
+    linkable: 文本上的链接可以点击跳转
+    align: 标签内容对齐方式
+***
+
+@ OptPushButton是按钮类，只能同时展示图标和文本的二者之一
+OptPushButton {
+    function: Callable = lambda: ...,
+    icon: Optional[Union[QIcon, str]] = None,
+    icon_model: bool = True,
+    icon_fixed: bool = True,
+    icon_size: [int, int] = None,
+    text: Optional[str] = None,
+    text_model: bool = False,
+    shortcuts: Optional[str] = None,
+    enabled: bool = True,
+    **kwargs
+}
+
+***
+    function: 点击时触发的功能函数
+    icon: 图标模式下的图标路径
+    icon_model: 图标模式
+    icon_fixed: 图标跟随按钮大小
+    icon_size: 自定义图标大小
+    text: 文本模式下的文本
+    text_model: 文本模式
+    shortcuts: 快捷键
+    enabled: 按钮可用
+***
+
+
+
+

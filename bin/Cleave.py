@@ -4,7 +4,7 @@ from random import choice
 
 if __name__ == '__main__':
     random_text = [
-        '<h1>Hello, Cleave</h1><br><br><h2>访问本站</h2><a style="color : gold" href="https://www.robot-shadow.cn/">https://www.robot-shadow.cn/</a>',
+        '<h1>Hello, Cleave</h1><br><br><h2>访问本站</h2><a style="color : gold" href="https://www.github.com/">https://www.github.com/</a>',
         '<h1>命令行模式</h1><br><br style="color : gold;font-size: 16px;"><p>查看手册帮助A</p><p>可以快速帮你了解和使用命令行工具!</p>'
     ]
 
